@@ -1,12 +1,12 @@
 import { Character } from "./character.js";
-class Mage {
+class  Mage extends Character {
     #manaPoints;
 
-    constructor(name, healthPoints, manaPoints) {
+    constructor(name, healthPoints = 50, manaPoints = 60) {
         super(name, healthPoints);
         this.#manaPoints = manaPoints;
     }
-    
+
     get manaPoints() {
         return this.#manaPoints;
     }

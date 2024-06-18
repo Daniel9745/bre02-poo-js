@@ -1,8 +1,8 @@
 import { Character } from "./character.js";
-class Warrior {
+class Warrior extends Character {
     #strength;
 
-    constructor(name, healthPoints, strength) {
+    constructor(name, healthPoints = 60, strength = 10) {
         super(name, healthPoints);
         this.#strength = strength;
     }
